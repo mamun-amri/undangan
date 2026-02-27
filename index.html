@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Undangan Syukuran Haji & Khitan</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
@@ -52,18 +53,14 @@
           mengundang Bapak/Ibu dalam acara syukuran keluarga kami:
         </p>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+        <div class="grid grid-cols-2 gap-4 mb-12">
           <img
-            src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=400&q=80"
-            class="rounded-xl shadow-md h-40 w-full object-cover border-2 border-emerald-50"
+            src="/img/img.jpeg"
+            class="rounded-xl shadow-md aspect-square w-full object-cover object-top border-2 border-emerald-50"
           />
           <img
-            src="https://images.unsplash.com/photo-1623055871840-025585501815?auto=format&fit=crop&w=400&q=80"
-            class="rounded-xl shadow-md h-40 w-full object-cover border-2 border-emerald-50"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=400&q=80"
-            class="hidden md:block rounded-xl shadow-md h-40 w-full object-cover border-2 border-emerald-50"
+            src="/img/img1.jpeg"
+            class="hidden md:block rounded-xl shadow-md aspect-square w-full object-cover object-top border-2 border-emerald-50"
           />
         </div>
 
@@ -74,17 +71,15 @@
             >
               Keberangkatan Haji
             </h2>
-            <p class="text-lg font-semibold mt-4">
-              Bpk. H. Ahmad & Ibu Hj. Siti
-            </p>
+            <p class="text-lg font-semibold mt-4">Bpk. Rasimin & Ibu Suswati</p>
           </div>
           <div class="p-6 rounded-2xl bg-amber-50 border border-amber-100">
             <h2
               class="text-xl font-bold text-amber-900 mb-2 underline decoration-emerald-500 underline-offset-8"
             >
-              Khitanan Putra
+              Khitanan Putra Bpk. Fiqri Ardiansah & Ibu Helmaliaputri
             </h2>
-            <p class="text-lg font-semibold mt-4">Ananda Muhammad Rayyan</p>
+            <p class="text-lg font-semibold mt-4">Arshaka</p>
           </div>
         </div>
 
@@ -92,13 +87,21 @@
           <h3 class="font-bold text-xl mb-4 text-emerald-800 italic">
             <i class="fa-solid fa-clock mr-2"></i>Waktu & Lokasi
           </h3>
-          <p>Minggu, 15 Maret 2026 | 09.00 WIB - Selesai</p>
-          <p class="mb-6">Gedung Serbaguna Jakarta Selatan</p>
+          <p>Senin, 30 Maret 2026 | 09.00 WIB - Selesai</p>
+          <p class="mb-6">
+            Kp. Pandelekan Ds. Warakas Kec. Binuang Kab. Serang
+          </p>
+          <a
+            href="https://maps.app.goo.gl/LrWu4TrYJgVo8XBv7"
+            target="_blank"
+            class="mb-6 font-bold"
+            >Dapatkan Arah</a
+          >
           <div
             class="h-64 rounded-xl overflow-hidden border-4 border-stone-100 shadow-inner"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.15582295697!2d106.7892!3d-6.2297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e3fa87%3A0x401576d14fed920!2sJakarta%20Selatan!5e0!3m2!1sid!2sid!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3967.028205121125!2d106.3372928!3d-6.1269068!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sid!4v1772166025286!5m2!1sen!2sid"
               width="100%"
               height="100%"
               style="border: 0"
@@ -132,9 +135,7 @@
               >
                 1234 5678 9012
               </p>
-              <p class="text-xs uppercase text-stone-400">
-                a.n Ahmad Bin Fulan
-              </p>
+              <p class="text-xs uppercase text-stone-400">a.n Rasimin</p>
               <button
                 onclick="copyText('norek1')"
                 class="mt-4 text-xs bg-emerald-700 text-white px-4 py-2 rounded-full hover:bg-emerald-800"
