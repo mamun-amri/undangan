@@ -169,7 +169,7 @@
       </div>
     </main>
 
-    <!-- <div class="fixed bottom-6 right-6 z-50">
+    <div class="fixed bottom-6 right-6 z-50">
       <div class="bg-emerald-800 p-4 rounded-full shadow-2xl">
         <button
           id="musicToggle"
@@ -178,19 +178,10 @@
           <i id="icon" class="fa-solid fa-play"></i>
         </button>
         <audio id="audio" loop>
-          <source src="https://youtu.be/47TFF5Q04gY" type="audio/mpeg" />
+          <source src="./music/deensalam.mp3" type="audio/mpeg" />
         </audio>
       </div>
-    </div> -->
-
-    <iframe
-      id="ytPlayer"
-      width="0"
-      height="0"
-      src="https://www.youtube.com/embed/47TFF5Q04gY?autoplay=1&loop=1&playlist=47TFF5Q04gY"
-      frameborder="0"
-      allow="autoplay"
-    ></iframe>
+    </div>
 
     <script>
       // Salin Teks Fungsi
@@ -201,19 +192,19 @@
       }
 
       // Music Toggle
-      // const audio = document.getElementById("audio");
-      // const btn = document.getElementById("musicToggle");
-      // const icon = document.getElementById("icon");
+      const audio = document.getElementById("audio");
+      const btn = document.getElementById("musicToggle");
+      const icon = document.getElementById("icon");
 
-      // btn.onclick = function () {
-      //   if (audio.paused) {
-      //     audio.play();
-      //     icon.classList.replace("fa-play", "fa-pause");
-      //   } else {
-      //     audio.pause();
-      //     icon.classList.replace("fa-pause", "fa-play");
-      //   }
-      // };
+      btn.onclick = function () {
+        if (audio.paused) {
+          audio.play();
+          icon.classList.replace("fa-play", "fa-pause");
+        } else {
+          audio.pause();
+          icon.classList.replace("fa-pause", "fa-play");
+        }
+      };
     </script>
   </body>
 </html>
