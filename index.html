@@ -53,34 +53,43 @@
           mengundang Bapak/Ibu dalam acara syukuran keluarga kami:
         </p>
 
-        <div class="grid grid-cols-2 gap-4 mb-12">
-          <img
-            src="./img/img.jpeg"
-            class="rounded-xl shadow-md aspect-square w-full object-cover object-top border-2 border-emerald-50"
-          />
-          <img
-            src="./img/img1.jpeg"
-            class="hidden md:block rounded-xl shadow-md aspect-square w-full object-cover object-top border-2 border-emerald-50"
-          />
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+          <section>
+            <img
+              src="./img/img.jpeg"
+              class="rounded-xl shadow-md aspect-square w-full object-cover object-top border-2 border-emerald-50"
+            />
 
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-          <div class="p-6 rounded-2xl bg-emerald-50 border border-emerald-100">
-            <h2
-              class="text-xl font-bold text-emerald-900 mb-2 underline decoration-amber-500 underline-offset-8"
+            <div
+              class="mt-5 p-6 h-40 rounded-2xl bg-emerald-50 border border-emerald-100"
             >
-              Keberangkatan Haji
-            </h2>
-            <p class="text-lg font-semibold mt-4">Bpk. Rasimin & Ibu Suswati</p>
-          </div>
-          <div class="p-6 rounded-2xl bg-amber-50 border border-amber-100">
-            <h2
-              class="text-xl font-bold text-amber-900 mb-2 underline decoration-emerald-500 underline-offset-8"
+              <h2
+                class="text-xl font-bold text-emerald-900 mb-2 underline decoration-amber-500 underline-offset-8"
+              >
+                Keberangkatan Haji
+              </h2>
+              <p class="text-lg font-semibold mt-4">
+                Bpk. Rasimin & Ibu Suswati
+              </p>
+            </div>
+          </section>
+          <section>
+            <img
+              src="./img/img1.jpeg"
+              class="rounded-xl shadow-md aspect-square w-full object-cover object-top border-2 border-emerald-50"
+            />
+
+            <div
+              class="mt-5 p-6 h-40 rounded-2xl bg-amber-50 border border-amber-100"
             >
-              Khitanan Putra Bpk. Fiqri Ardiansah & Ibu Helmaliaputri
-            </h2>
-            <p class="text-lg font-semibold mt-4">Arshaka</p>
-          </div>
+              <h2
+                class="text-xl font-bold text-amber-900 mb-2 underline decoration-emerald-500 underline-offset-8"
+              >
+                Khitanan Putra Bpk. Fiqri Ardiansah & Ibu Helmaliaputri
+              </h2>
+              <p class="text-lg font-semibold mt-4">Arshaka</p>
+            </div>
+          </section>
         </div>
 
         <div class="mb-12">
@@ -94,8 +103,20 @@
           <a
             href="https://maps.app.goo.gl/LrWu4TrYJgVo8XBv7"
             target="_blank"
-            class="mb-6 font-bold"
-            >Dapatkan Arah</a
+            class="mb-6 font-bold flex gap-2 items-center justify-center text-emerald-800 italic"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              weight="fill"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M124,175a8,8,0,0,0,7.94,0c2.45-1.41,60-35,60-94.95A64,64,0,0,0,64,80C64,140,121.58,173.54,124,175ZM128,56a24,24,0,1,1-24,24A24,24,0,0,1,128,56ZM240,184c0,31.18-57.71,48-112,48S16,215.18,16,184c0-14.59,13.22-27.51,37.23-36.37a8,8,0,0,1,5.54,15C42.26,168.74,32,176.92,32,184c0,13.36,36.52,32,96,32s96-18.64,96-32c0-7.08-10.26-15.26-26.77-21.36a8,8,0,0,1,5.54-15C226.78,156.49,240,169.41,240,184Z"
+              ></path>
+            </svg>
+            Dapatkan Arah</a
           >
           <div
             class="h-64 rounded-xl overflow-hidden border-4 border-stone-100 shadow-inner"
@@ -127,13 +148,13 @@
               class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200"
             >
               <p class="font-bold text-blue-700 text-xl italic mb-2">
-                BANK MANDIRI
+                BANK BRI
               </p>
               <p
                 id="norek1"
                 class="text-lg font-mono tracking-widest text-stone-700 mb-2"
               >
-                1234 5678 9012
+                4846 01 035881 530
               </p>
               <p class="text-xs uppercase text-stone-400">a.n Rasimin</p>
               <button
@@ -148,7 +169,7 @@
       </div>
     </main>
 
-    <div class="fixed bottom-6 right-6 z-50">
+    <!-- <div class="fixed bottom-6 right-6 z-50">
       <div class="bg-emerald-800 p-4 rounded-full shadow-2xl">
         <button
           id="musicToggle"
@@ -157,13 +178,19 @@
           <i id="icon" class="fa-solid fa-play"></i>
         </button>
         <audio id="audio" loop>
-          <source
-            src="https://www.bensound.com/royalty-free-music/track/tenderness"
-            type="audio/mpeg"
-          />
+          <source src="https://youtu.be/47TFF5Q04gY" type="audio/mpeg" />
         </audio>
       </div>
-    </div>
+    </div> -->
+
+    <iframe
+      id="ytPlayer"
+      width="0"
+      height="0"
+      src="https://www.youtube.com/embed/47TFF5Q04gY?autoplay=1&loop=1&playlist=47TFF5Q04gY"
+      frameborder="0"
+      allow="autoplay"
+    ></iframe>
 
     <script>
       // Salin Teks Fungsi
